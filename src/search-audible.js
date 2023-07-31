@@ -242,7 +242,7 @@ export default async function searchAudible({
       });
     });
 
-    page(".authorLabel a", elSel).each((ii, narratorSel) => {
+    page(".narratorLabel a", elSel).each((ii, narratorSel) => {
       const narratorEl = page(narratorSel);
       newBook.narrators.push({
         name: narratorEl.text().trim(),
